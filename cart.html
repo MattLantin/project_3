@@ -19,18 +19,14 @@
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="#" class="active"><i class="far fa-shopping-bag"></i></a></li>
-                <a id="close" href="#"><i class="far fa-times"></i></a>
+                <li id="lg-bag"><a class="active" href="cart.html">Cart</i></a></li>
+                <li id="lg-bag"><a href="cart.html">Orders</i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
             <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
-
         </div>
     </section>
 
@@ -45,7 +41,7 @@
         <table width="100%">
             <thead>
                 <tr>
-                    <td>Remove</td>
+                    <td></td>
                     <td>Image</td>
                     <td>Product</td>
                     <td>Price</td>
@@ -55,61 +51,29 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f1.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-Shirts</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>$118.19</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f2.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-Shirts</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>$118.19</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f3.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-Shirts</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>$118.19</td>
-                </tr>
             </tbody>
         </table>
     </section>
 
     <section id="cart-add" class="section-p1">
-        <div id="cuopon">
-            <h3>Apply Coupon</h3>
-            <div>
-                <input type="text" name="" id="" placeholder="Enter Your Coupon">
-                <button class="normal">Apply</button>
-            </div>
-        </div>
-
         <div id="subtotal">
             <h3>Cart Totals</h3>
             <table>
-                <tr>
-                    <td>Cart Subtotal</td>
-                    <td>$ 335</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>$ 335</strong></td>
-                </tr>
+              <tr>
+                <td>Cart Subtotal</td>
+                <td>$ <span id="cart-subtotal">0.00</span></td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$ <span id="cart-total">0.00</span></strong></td>
+              </tr>
             </table>
             <button class="normal">Proceed to checkout</button>
-        </div>
+          </div>
     </section>
 
 
@@ -156,10 +120,6 @@
             </div>
             <p>Secured Payment Gateways </p>
             <img src="img/pay/pay.png" alt="">
-        </div>
-
-        <div class="copyright">
-            <p>© 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
 
