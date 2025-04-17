@@ -13,3 +13,9 @@ if (close) {
         nav.classList.remove('active');
     })
 }
+
+document.querySelectorAll('.btn').forEach(a => {
+    a.addEventListener('click', function(e) {
+      e.preventDefault(); // ensures it never tries to redirect
+    });
+  });

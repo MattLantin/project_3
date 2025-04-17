@@ -14,13 +14,11 @@
 <body>
 
     <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li id="lg-bag"><a href="cart.html">Cart</i></a></li>
-                <li id="lg-bag"><a href="cart.html">Order History</i></a></li>
+                <li id="lg-bag"><a href="cart.html">Orders</i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -67,220 +65,375 @@
         <h2>Featured Products</h2>
         <p>Summer Collection · New Modern Design</p>
         <div class="pro-container">
-    
-            <div class="pro" onclick="window.location.href='sproduct.html';">
-                <img src="img/products/f1.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Silk Linen Blend Shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$249.99</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+      
+          <!-- f1 -->
+          <div class="pro" >
+            <img src="img/products/f1.jpg" alt="">
+            <div class="des">
+              <span>Versure</span>
+              <h5>Silk Linen Blend Shirt</h5>
+              <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <h4>$249.99</h4>
+              <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+              </form>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/f2.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Limited Edition Windbreaker</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$329.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div style="margin-top: 10px;">
+              <a class="add_item btn">Add</a>
+              <a class="show_description btn">More</a>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/f3.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Minimalist Wool Sweater</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$199.50</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <p class="hidden_elmnt">Light silk casual shirt</p>
+          </div>
+      
+          <!-- f2 -->
+          <div class="pro" >
+            <img src="img/products/f2.jpg" alt="">
+            <div class="des">
+              <span>Versure</span>
+              <h5>Limited Edition Windbreaker</h5>
+              <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <h4>$329.00</h4>
+              <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+              </form>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/f4.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Couture Quilted Bomber</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$459.99</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div style="margin-top: 10px;">
+              <a class="add_item btn">Add</a>
+              <a class="show_description btn">More</a>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/f5.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Luxury Knit Hoodie</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$389.95</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <p class="hidden_elmnt">Lightweight urban windbreaker</p>
+          </div>
+      
+          <!-- f3 -->
+          <div class="pro" >
+            <img src="img/products/f3.jpg" alt="">
+            <div class="des">
+              <span>Versure</span>
+              <h5>Minimalist Wool Sweater</h5>
+              <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <h4>$199.50</h4>
+              <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+              </form>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/f6.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Classic Denim Jacket</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$274.25</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div style="margin-top: 10px;">
+              <a class="add_item btn">Add</a>
+              <a class="show_description btn">More</a>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/f7.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Structured Trench Coat</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$349.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <p class="hidden_elmnt">Simple cozy wool top</p>
+          </div>
+      
+          <!-- f4 -->
+          <div class="pro" >
+            <img src="img/products/f4.jpg" alt="">
+            <div class="des">
+              <span>Versure</span>
+              <h5>Couture Quilted Bomber</h5>
+              <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <h4>$459.99</h4>
+              <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+              </form>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/f8.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Tech-Fabric Performance Jacket</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$499.99</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div style="margin-top: 10px;">
+              <a class="add_item btn">Add</a>
+              <a class="show_description btn">More</a>
             </div>
-    
-            <!-- n1-n8 -->
-    
-            <div class="pro">
-                <img src="img/products/n1.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Luxury Stretch Pants</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$179.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <p class="hidden_elmnt">Stylish quilted bomber jacket</p>
+          </div>
+      
+          <!-- f5 -->
+          <div class="pro" >
+            <img src="img/products/f5.jpg" alt="">
+            <div class="des">
+              <span>Versure</span>
+              <h5>Luxury Knit Hoodie</h5>
+              <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <h4>$389.95</h4>
+              <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+              </form>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/n2.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Tailored Slim-Fit Pants</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$195.75</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div style="margin-top: 10px;">
+              <a class="add_item btn">Add</a>
+              <a class="show_description btn">More</a>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/n3.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Luxury Cargo Joggers</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$239.95</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <p class="hidden_elmnt">Premium knit pullover hoodie</p>
+          </div>
+      
+          <!-- f6 -->
+          <div class="pro" >
+            <img src="img/products/f6.jpg" alt="">
+            <div class="des">
+              <span>Versure</span>
+              <h5>Classic Denim Jacket</h5>
+              <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <h4>$274.25</h4>
+              <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+              </form>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/n4.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>High-End Cotton Shorts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$159.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div style="margin-top: 10px;">
+              <a class="add_item btn">Add</a>
+              <a class="show_description btn">More</a>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/n5.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Textured Wool Slacks</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$199.99</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <p class="hidden_elmnt">Timeless blue denim jacket</p>
+          </div>
+      
+          <!-- f7 -->
+          <div class="pro" >
+            <img src="img/products/f7.jpg" alt="">
+            <div class="des">
+              <span>Versure</span>
+              <h5>Structured Trench Coat</h5>
+              <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <h4>$349.00</h4>
+              <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+              </form>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/n6.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Urban Luxe Joggers</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$212.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div style="margin-top: 10px;">
+              <a class="add_item btn">Add</a>
+              <a class="show_description btn">More</a>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/n7.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Performance Hybrid Pants</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$275.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <p class="hidden_elmnt">Sleek modern trench coat</p>
+          </div>
+      
+          <!-- f8 -->
+          <div class="pro" >
+            <img src="img/products/f8.jpg" alt="">
+            <div class="des">
+              <span>Versure</span>
+              <h5>Tech-Fabric Performance Jacket</h5>
+              <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <h4>$499.99</h4>
+              <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+              </form>
             </div>
-    
-            <div class="pro">
-                <img src="img/products/n8.jpg" alt="">
-                <div class="des">
-                    <span>Versure</span>
-                    <h5>Tailored Luxe Trousers</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>$325.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div style="margin-top: 10px;">
+              <a class="add_item btn">Add</a>
+              <a class="show_description btn">More</a>
             </div>
-    
+            <p class="hidden_elmnt">High-tech waterproof jacket</p>
+          </div>
+
+          <!-- n1 -->
+        <div class="pro" >
+            <img src="img/products/n1.jpg" alt="">
+            <div class="des">
+            <span>Versure</span>
+            <h5>Luxury Stretch Pants</h5>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <h4>$179.00</h4>
+            <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </form>
+            </div>
+            <div style="margin-top: 10px;">
+            <a class="add_item btn">Add</a>
+            <a class="show_description btn">More</a>
+            </div>
+            <p class="hidden_elmnt">Stretchy luxury slim pants</p>
         </div>
-    </section>
-    
+        
+        <!-- n2 -->
+        <div class="pro" >
+            <img src="img/products/n2.jpg" alt="">
+            <div class="des">
+            <span>Versure</span>
+            <h5>Tailored Slim-Fit Pants</h5>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <h4>$195.75</h4>
+            <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </form>
+            </div>
+            <div style="margin-top: 10px;">
+            <a class="add_item btn">Add</a>
+            <a class="show_description btn">More</a>
+            </div>
+            <p class="hidden_elmnt">Formal slim tailored pants</p>
+        </div>
+        
+        <!-- n3 -->
+        <div class="pro" >
+            <img src="img/products/n3.jpg" alt="">
+            <div class="des">
+            <span>Versure</span>
+            <h5>Luxury Cargo Joggers</h5>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <h4>$239.95</h4>
+            <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </form>
+            </div>
+            <div style="margin-top: 10px;">
+            <a class="add_item btn">Add</a>
+            <a class="show_description btn">More</a>
+            </div>
+            <p class="hidden_elmnt">Premium cargo jogger pants</p>
+        </div>
+        
+        <!-- n4 -->
+        <div class="pro" >
+            <img src="img/products/n4.jpg" alt="">
+            <div class="des">
+            <span>Versure</span>
+            <h5>High-End Cotton Shorts</h5>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <h4>$159.00</h4>
+            <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </form>
+            </div>
+            <div style="margin-top: 10px;">
+            <a class="add_item btn">Add</a>
+            <a class="show_description btn">More</a>
+            </div>
+            <p class="hidden_elmnt">Soft cotton designer shorts</p>
+        </div>
+        
+        <!-- n5 -->
+        <div class="pro" >
+            <img src="img/products/n5.jpg" alt="">
+            <div class="des">
+            <span>Versure</span>
+            <h5>Textured Wool Slacks</h5>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <h4>$199.99</h4>
+            <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </form>
+            </div>
+            <div style="margin-top: 10px;">
+            <a class="add_item btn">Add</a>
+            <a class="show_description btn">More</a>
+            </div>
+            <p class="hidden_elmnt">Classic wool textured slacks</p>
+        </div>
+        
+        <!-- n6 -->
+        <div class="pro" >
+            <img src="img/products/n6.jpg" alt="">
+            <div class="des">
+            <span>Versure</span>
+            <h5>Urban Luxe Joggers</h5>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <h4>$212.00</h4>
+            <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </form>
+            </div>
+            <div style="margin-top: 10px;">
+            <a class="add_item btn">Add</a>
+            <a class="show_description btn">More</a>
+            </div>
+            <p class="hidden_elmnt">Urban athletic-style joggers</p>
+        </div>
+        
+        <!-- n7 -->
+        <div class="pro" >
+            <img src="img/products/n7.jpg" alt="">
+            <div class="des">
+            <span>Versure</span>
+            <h5>Performance Hybrid Pants</h5>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <h4>$275.00</h4>
+            <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </form>
+            </div>
+            <div style="margin-top: 10px;">
+            <a class="add_item btn">Add</a>
+            <a class="show_description btn">More</a>
+            </div>
+            <p class="hidden_elmnt">Hybrid comfort performance pants</p>
+        </div>
+        
+        <!-- n8 -->
+        <div class="pro" >
+            <img src="img/products/n8.jpg" alt="">
+            <div class="des">
+            <span>Versure</span>
+            <h5>Tailored Luxe Trousers</h5>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <h4>$325.00</h4>
+            <form class="qty_select_form" onClick="event.stopPropagation();">
+                <select name="qty_select" class="qty_select">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </form>
+            </div>
+            <div style="margin-top: 10px;">
+            <a class="add_item btn">Add</a>
+            <a class="show_description btn">More</a>
+            </div>
+            <p class="hidden_elmnt">Premium tailored formal trousers</p>
+        </div>
+</section> 
     <section id="sm-banner" class="section-p1">
         <div class="banner-box">
             <h4>crazy deals</h4>
@@ -378,3 +531,5 @@
 </body>
 
 </html>
+
+<script
